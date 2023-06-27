@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "MixinClientPlayNetworkHandler"
+    "MixinSoundPacketHandler"
   ],
   "injectors": {
     "defaultRequire": 1

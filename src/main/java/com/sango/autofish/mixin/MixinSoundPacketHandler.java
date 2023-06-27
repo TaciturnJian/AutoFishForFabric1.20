@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ClientPlayNetworkHandler.class)
-public class MixinClientPlayNetworkHandler {
+public class MixinSoundPacketHandler {
 
     @Shadow private MinecraftClient client;
 
@@ -19,6 +19,5 @@ public class MixinClientPlayNetworkHandler {
     public void onPlaySound(PlaySoundS2CPacket playSoundS2CPacket_1, CallbackInfo ci) {
         if (client.isOnThread()) AutoFish.getInstance().ProcessPacket(playSoundS2CPacket_1);
     }
-
 
 }

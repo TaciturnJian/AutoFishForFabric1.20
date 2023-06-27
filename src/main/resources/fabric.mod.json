@@ -1,10 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "autofish",
+  "id": "sangoautofish",
   "version": "${version}",
   "name": "AutoFish",
   "description": "",
-  "authors": [],
+  "authors": [
+    "TaciturnJian"
+  ],
   "contact": {
     "repo": "https://github.com/TaciturnJian/FabricAutoFish"
   },
